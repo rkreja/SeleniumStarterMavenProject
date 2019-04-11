@@ -18,5 +18,13 @@ public class TimeAndTrainingLaunchTest extends TestBase{
 		Assert.assertNotNull(e);
 	}
 	
+	@Test
+	public void launchTimeAndTrainingTest2() {
+	
+		driver.get("http://www.timeandtraining.net");
+		WebElement e=driver.findElement(By.xpath("//h1[text()='Hi, Welcome!']"));
+		Assert.assertNotNull(e);
+	}
+	
 }
 
